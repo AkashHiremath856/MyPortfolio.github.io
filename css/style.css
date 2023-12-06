@@ -1,5 +1,7 @@
 /*This stylesheet contains some custom class rather than Bootstrap*/
-		
+*{
+	font-family: Comfortaa;
+}
 a.brand img {
 	border-radius:50%;
 	border:5px solid #fff;
@@ -31,7 +33,6 @@ a.brand img {
 }
 a.hire-me {
 	display: inline-block;
- *display: inline;
 	padding:20px 60px;
 	background:#39d084;
 	color:#fff;
@@ -142,26 +143,18 @@ ul.social-icons li a:hover {
 .ps2 {
 	width:90%;
 	background:#30a5dc;
-	-moz-animation:html5 2s ease-out;
-	-webkit-animation:html5 2s ease-out;
 }
 .ai2 {
 	width:80%;
 	background:#ee742b;
-	-moz-animation:css3 2s ease-out;
-	-webkit-animation:css3 2s ease-out;
 }
 .html2 {
 	width:75%;
 	background:#f04949;
-	-moz-animation:jquery 2s ease-out;
-	-webkit-animation:jquery 2s ease-out;
 }
 .css2 {
 	width:85%;
 	background:#39d084;
-	-moz-animation:photoshop 2s ease-out;
-	-webkit-animation:photoshop 2s ease-out;
 }
  @-moz-keyframes ps2 {
 0% {
@@ -232,7 +225,6 @@ ul.work-images li {
 	list-style:none;
 	display:inline-block;
 	margin: 8px 10px;
- background:
 }
 ul.work-images li:first-child {
 	margin-left:0;
