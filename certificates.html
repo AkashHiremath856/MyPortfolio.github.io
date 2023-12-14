@@ -9,22 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
 
+<style>
+    .custom-container {
+        text-align: center;
+    }
+
+    .custom-button {
+        margin-top: 20px;
+    }
+</style>
+
+<div class="container mt-5 custom-container">
+    <a href="#" class="btn btn-primary custom-button" onclick="goBack()">Go Back</a>
+</div>
+
 <body>
-    <div class="navbar">
-        <div class="navbar-inner">
-            <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span
-                        class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a
-                    class="brand" href="index.html"></a>
-                <ul class="nav nav-collapse pull-right">
-                    <li><a href="index.html"><i class="icon-user"></i> Profile</a></li>
-                    <li><a href="skills.html"><i class="icon-trophy"></i> Skills</a></li>
-                    <li><a href="certificates.html" class="active"><i class="icon-picture"></i> Certificates</a></li>
-                    <li><a href="resume.html"><i class="icon-doc-text"></i> Resume</a></li>
-                </ul>
-                <div class="nav-collapse collapse"></div>
-            </div>
-        </div>
-    </div>
     <div class="container work">
         <h2>My Certificates</h2>
         <ul class="work-images">
@@ -84,6 +83,57 @@
                         title="Click to view"><img src="archives/c7.jpg" alt=""></a></div>
             </li>
     </div>
+    <button id="goToTopBtn" class="btn btn-primary" onclick="goToTop()">Go to Top</button>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+
+  $(document).ready(function () {
+    $('a[href^="#"]').on('click', function (event) {
+      event.preventDefault();
+
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
+    });
+  });
+
+      function goToTop() {
+        document.body.scrollTop = 0;      
+      document.documentElement.scrollTop = 0; 
+    }
+
+      window.onscroll = function () {
+        scrollFunction();
+    };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("goToTopBtn").style.display = "block";
+        } else {
+        document.getElementById("goToTopBtn").style.display = "none";
+        }
+    }
+
+     $(window).scroll(function () {
+        var scrollDistance = $(window).scrollTop();
+
+        $('.section').each(function (i) {
+          if ($(this).position().top <= scrollDistance) {
+            $('.navbar .nav-link').removeClass('active');
+            $('.navbar .nav-link').eq(i).addClass('active');
+          }
+        });
+      });
+
+</script>
+
 
 </html>
