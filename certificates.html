@@ -7,360 +7,228 @@
    <meta name="description" content="Start your development with Steller landing page.">
    <meta name="author" content="Devcrud">
    <title>My Portfolio | Certifications</title>
-   <!-- font icons -->
-   <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-   <!-- Bootstrap + Steller  -->
-   <link rel="stylesheet" href="assets/css/steller.css">
-   <!-- Page icon -->
-   <link rel="icon" type="image/x-icon" href="assets/imgs/logo.svg">
+   <!-- Font icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <!-- Tailwind CSS CDN -->
+   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="font-sans bg-gray-100">
 
    <!-- Page Header -->
-   <header class="header header-mini">
-      <div class="header-title">Certifications</div>
-      <nav aria-label="breadcrumb">
-         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Certifications</li>
-         </ol>
-      </nav>
+   <header class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto text-center">
+         <h1 class="text-3xl font-bold">Certifications</h1>
+         <nav class="mt-2">
+            <a href="index.html" class="text-blue-400 hover:text-blue-600">Home</a> /
+            <span class="text-gray-300">Certifications</span>
+         </nav>
+      </div>
    </header>
    <!-- End Of Page Header -->
 
    <!-- Certifications -->
-   <section id="blog" class="section">
-      <div class="container text-center">
-         <h6 class="section-title mb-4">My Certifications</h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <section id="certifications" class="py-12">
+      <div class="container mx-auto px-4">
 
-         <!--  Internship Certificate Start-->
-
-         <div>
-            <h2 style="text-align: left;">Internship Certificate</h2>
+         <!-- Section Title -->
+         <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold">My Certifications</h2>
          </div>
-         <div class="row text-center">
-         
-            <div class="container">
-               <div class="row justify-content-center">
-                  <div class="col-md-6">
-                     <div class="card border mb-4">
-                        <a href="assets/archives/IC.png"><img src="assets/archives/IC.png" alt="" class="card-img-top w-100"></a>
-                        <div class="card-body">
-                           <h5 class="card-title">Internship Certificates from Analyttica</h5>
-                        </div>
-                     </div>
+
+         <!-- Internship Certificates -->
+         <div class="mb-12">
+            <h3 class="text-3xl font-semibold mb-6">Internship Certificates</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+               <!-- Certificate 1 -->
+               <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <a href="assets/archives/IC.png" class="block">
+                     <img src="assets/archives/IC.png" alt="Internship Certificate from Analyttica"
+                        class="w-full h-48 object-cover">
+                  </a>
+                  <div class="p-4">
+                     <h4 class="text-xl font-medium">Internship Certificates from Analyttica</h4>
                   </div>
                </div>
-            </div>
-         
-         <!--  Internship Certificate end-->
 
-            
-         <!-- Virtual Internship Certificate Start-->
-         <div>
-            <h2>Internship Simulation Certificates from Forage</h2>
-         </div>
-         <div class="row text-left">
-
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/f3.pdf"><img src="assets/archives/f3.jpg" alt="" class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">Power BI Job From pwc</h5>
+               <!-- Certificate 2 -->
+               <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <a href="assets/archives/f3.pdf" class="block">
+                     <img src="assets/archives/f3.jpg" alt="Power BI Job from PwC" class="w-full h-48 object-cover">
+                  </a>
+                  <div class="p-4">
+                     <h4 class="text-xl font-medium">Power BI Job From PwC</h4>
                   </div>
                </div>
-               </div>
 
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/f2.pdf"><img src="assets/archives/f2.jpg" alt="" class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">Data Visualisation: Empowering Business
-                     with Effective Insights From TCS</h5>
+               <!-- Certificate 3 -->
+               <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <a href="assets/archives/f2.pdf" class="block">
+                     <img src="assets/archives/f2.jpg" alt="Data Visualization from TCS"
+                        class="w-full h-48 object-cover">
+                  </a>
+                  <div class="p-4">
+                     <h4 class="text-xl font-medium">Data Visualization from TCS</h4>
                   </div>
                </div>
-            </div>
 
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/f1.pdf"><img src="assets/archives/f1.png" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">Data Analytics Consulting Virtual Internship From KPMG</h5>
-                  </div>
-               </div>
             </div>
          </div>
 
-         <!-- Virtual Internship Certificate End -->
+         <!-- 2024 Certificates -->
+         <div class="mb-12">
+            <h3 class="text-3xl font-semibold mb-6">2024</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-         <!-- 2024 Start -->
-         <div>
-            <h2>2024</h2>
-         </div>
-         <div class="row text-left">
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/ds9.pdf"><img src="assets/archives/ds9.jpg" alt="" class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">IBM Data Science Professional Certificate (Machine Learning with Python)</h5>
+               <!-- Certificate 1 -->
+               <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <a href="assets/archives/ds9.pdf" class="block">
+                     <img src="assets/archives/ds9.jpg" alt="IBM Data Science Professional Certificate"
+                        class="w-full h-48 object-cover">
+                  </a>
+                  <div class="p-4">
+                     <h4 class="text-xl font-medium">IBM Data Science Professional Certificate (Machine Learning with
+                        Python)</h4>
                   </div>
                </div>
-            </div>
 
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/ds8.pdf"><img src="assets/archives/ds8.jpg" alt="" class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">IBM Data Science Professional Certificate (Data Visualization with Python)</h5>
+               <!-- Certificate 2 -->
+               <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <a href="assets/archives/ds8.pdf" class="block">
+                     <img src="assets/archives/ds8.jpg" alt="Data Visualization with Python"
+                        class="w-full h-48 object-cover">
+                  </a>
+                  <div class="p-4">
+                     <h4 class="text-xl font-medium">IBM Data Science Professional Certificate (Data Visualization with
+                        Python)</h4>
                   </div>
                </div>
-            </div>
 
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/ds7.pdf"><img src="assets/archives/ds7.jpg" alt="" class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">IBM Data Science Professional Certificate (Data Analysis with Python)</h5>
+               <!-- Certificate 3 -->
+               <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <a href="assets/archives/ds7.pdf" class="block">
+                     <img src="assets/archives/ds7.jpg" alt="Data Analysis with Python"
+                        class="w-full h-48 object-cover">
+                  </a>
+                  <div class="p-4">
+                     <h4 class="text-xl font-medium">IBM Data Science Professional Certificate (Data Analysis with
+                        Python)</h4>
                   </div>
                </div>
-            </div>
 
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/ds6.pdf"><img src="assets/archives/ds6.jpg" alt="" class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">IBM Data Science Professional Certificate(Database and SQL for Data Science with Python)</h5>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/ds5.pdf"><img src="assets/archives/ds5.jpg" alt="" class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">IBM Data Science Professional Certificate (Python Projects for Data Science)</h5>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/ds4.pdf"><img src="assets/archives/ds4.jpg" alt="" class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">IBM Data Science Professional Certificate (Python for Data Science, AI & Development)</h5>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/ds3.pdf"><img src="assets/archives/ds3.jpg" alt="" class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">IBM Data Science Professional Certificate (Data Science Methodology)</h5>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/ds2.pdf"><img src="assets/archives/ds2.jpg" alt="" class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">IBM Data Science Professional Certificate (Tools for Data Science)</h5>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/ds1.pdf"><img src="assets/archives/ds1.jpg" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">IBM Data Science Professional Certificate (What is Data Science?)</h5>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/LL3.pdf"><img src="assets/archives/LL3.jpg" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">Learning Data Analytics Part 2: Extending and
-                        Applying Core Knowledge</h5>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/LL2.pdf"><img src="assets/archives/LL2.jpg" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">Learning Data Analytics: 1 Foundations</h5>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/LL1.pdf"><img src="assets/archives/LL1.jpg" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">Introduction to Career Skills in Data Analytics</h5>
-                  </div>
-               </div>
             </div>
          </div>
 
-         <!-- 2024 End -->
+         <!-- 2023 Certificates -->
+         <div class="mb-12">
+            <h3 class="text-3xl font-semibold mb-6">2023</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-         <!-- 2023 Start -->
-         <div>
-            <h2>2023</h2>
-         </div>
-         <div class="row text-left">
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/11.pdf"><img src="assets/archives/11.jpg" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">Data Science Course Certificate from Intershala</h5>
+               <!-- Certificate 1 -->
+               <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <a href="assets/archives/11.pdf" class="block">
+                     <img src="assets/archives/11.jpg" alt="Data Science Course Certificate"
+                        class="w-full h-48 object-cover">
+                  </a>
+                  <div class="p-4">
+                     <h4 class="text-xl font-medium">Data Science Course Certificate from Intershala</h4>
                   </div>
                </div>
-            </div>
 
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/2.pdf"> <img src="assets/archives/2.jpg" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">MySQL Assessment Certificate from HackerRank</h5>
+               <!-- Certificate 2 -->
+               <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <a href="assets/archives/2.pdf" class="block">
+                     <img src="assets/archives/2.jpg" alt="MySQL Assessment Certificate"
+                        class="w-full h-48 object-cover">
+                  </a>
+                  <div class="p-4">
+                     <h4 class="text-xl font-medium">MySQL Assessment Certificate from HackerRank</h4>
                   </div>
                </div>
-            </div>
 
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/3.pdf"><img src="assets/archives/3.jpg" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">Problem Solving Assessment Certificate from HackerRank</h5>
+               <!-- Certificate 3 -->
+               <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <a href="assets/archives/3.pdf" class="block">
+                     <img src="assets/archives/3.jpg" alt="Problem Solving Certificate"
+                        class="w-full h-48 object-cover">
+                  </a>
+                  <div class="p-4">
+                     <h4 class="text-xl font-medium">Problem Solving Assessment Certificate from HackerRank</h4>
                   </div>
                </div>
-            </div>
 
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/1.pdf"><img src="assets/archives/1.jpg" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">Python Assessment Certificate from HackerRank</h5>
-                  </div>
-               </div>
             </div>
          </div>
 
-         <!-- 2023 End -->
+         <!-- 2022 Certificates -->
+         <div class="mb-12">
+            <h3 class="text-3xl font-semibold mb-6">2022</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-         <!-- 2022 Start -->
+               <!-- Certificate 1 -->
+               <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <a href="assets/archives/9.png" class="block">
+                     <img src="assets/archives/9.png" alt="ML Intermediate Certificate from Kaggle"
+                        class="w-full h-48 object-cover">
+                  </a>
+                  <div class="p-4">
+                     <h4 class="text-xl font-medium">ML Intermediate Course Completion Certificate from Kaggle</h4>
+                  </div>
+               </div>
 
-         <div>
-            <h2>2022</h2>
+               <!-- Certificate 2 -->
+               <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <a href="assets/archives/8.png" class="block">
+                     <img src="assets/archives/8.png" alt="ML Basic Course Certificate"
+                        class="w-full h-48 object-cover">
+                  </a>
+                  <div class="p-4">
+                     <h4 class="text-xl font-medium">ML Basic Course Completion Certificate from Kaggle</h4>
+                  </div>
+               </div>
+
+               <!-- Certificate 3 -->
+               <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <a href="assets/archives/7.png" class="block">
+                     <img src="assets/archives/7.png" alt="Data Visualization Certificate"
+                        class="w-full h-48 object-cover">
+                  </a>
+                  <div class="p-4">
+                     <h4 class="text-xl font-medium">Data Visualization Course Completion Certificate from Kaggle</h4>
+                  </div>
+               </div>
+
+            </div>
          </div>
 
-         <div class="row text-left">
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/9.png"><img src="assets/archives/9.png" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">ML Intermediate Couse Completion Certificate from Kaggle</h5>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/8.png"><img src="assets/archives/8.png" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">ML basic Couse Completion Certificate from Kaggle</h5>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/7.png"><img src="assets/archives/7.png" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">Data Visualization Couse Completion Certificate from Kaggle</h5>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/6.png"><img src="assets/archives/6.png" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">Data Cleaning Couse Completion Certificate from Kaggle</h5>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/5.png"><img src="assets/archives/5.png" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">Pandas Couse Completion Certificate from Kaggle</h5>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4">
-               <div class="card border mb-4">
-                  <a href="assets/archives/4.png"><img src="assets/archives/4.png" alt=""
-                        class="card-img-top w-100"></a>
-                  <div class="card-body">
-                     <h5 class="card-title">Python Couse Completion Certificate from Kaggle</h5>
-                  </div>
-               </div>
-            </div>
-
-         </div>
       </div>
    </section>
-
-   <!-- 2022 End -->
-
-   <!-- End of Certifications -->
+   <!-- End Certifications Section -->
 
    <!-- Page Footer -->
-   <footer class="page-footer">
-      <div class="container">
-         <div class="row align-items-center">
-            <div class="col-sm-6">
-               <p>Copyright
-                  <script>document.write(new Date().getFullYear())</script> &copy; <a href="#">Akash</a>
-               </p>
-            </div>
-         </div>
+   <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto text-center">
+         <p>&copy; <span id="year"></span> Akash. All Rights Reserved.</p>
       </div>
    </footer>
-   <!-- End of page footer -->
 
-   <!-- core  -->
-   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-   <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-   <!-- steller js -->
-   <script src="assets/js/steller.js"></script>
+   <!-- Script to update the year -->
+   <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+   </script>
 
 </body>
 
