@@ -15,92 +15,118 @@
 
 <body class="scroll-smooth" id="home">
 
-    <!-- Page navigation -->
-    <nav class="fixed top-0 left-0 w-full bg-white shadow-lg z-10">
-        <div class="container mx-auto flex items-center justify-between px-4 py-3">
-            <a class="flex items-center" href="#">
-                <img src="assets/imgs/logo.svg" alt="Logo" class="h-8">
+    <!-- Modern Animated Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center space-x-2">
+                <img src="assets/imgs/logo.svg" alt="Logo" class="h-8 w-auto">
+                <span class="text-xl font-bold text-gray-800">Akash</span>
             </a>
-            <button class="block lg:hidden text-gray-500 focus:outline-none" id="navbar-toggler">
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
+
+            <!-- Hamburger Menu -->
+            <button id="navbar-toggler"
+                class="lg:hidden flex flex-col justify-center items-center space-y-1 focus:outline-none">
+                <span class="block w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+                <span class="block w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+                <span class="block w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
             </button>
-            <div class="hidden lg:flex lg:items-center lg:space-x-6" id="navbar-menu">
-                <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
-                <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
-                <a href="#skills" class="text-gray-700 hover:text-blue-600">Skills</a>
-                <a href="#portfolio" class="text-gray-700 hover:text-blue-600">Portfolio</a>
-                <a href="#blog" class="text-gray-700 hover:text-blue-600">Blog</a>
-                <a href="certificates.html" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+
+            <!-- Nav Links -->
+            <div id="navbar-menu" class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="certificates.html"
+                    class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300">
                     Certifications
                 </a>
             </div>
         </div>
-        <div class="lg:hidden bg-white shadow-lg" id="mobile-menu" style="display: none;">
-            <a href="#home" class="block px-4 py-2 text-gray-700 hover:text-blue-600">Home</a>
-            <a href="#about" class="block px-4 py-2 text-gray-700 hover:text-blue-600">About</a>
-            <a href="#skills" class="block px-4 py-2 text-gray-700 hover:text-blue-600">Skills</a>
-            <a href="#portfolio" class="block px-4 py-2 text-gray-700 hover:text-blue-600">Portfolio</a>
-            <a href="#blog" class="block px-4 py-2 text-gray-700 hover:text-blue-600">Blog</a>
-            <a href="certificates.html" class="block px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700">
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden flex flex-col bg-white px-4 pb-4 space-y-2">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#portfolio" class="mobile-link">Portfolio</a>
+            <a href="#blog" class="mobile-link">Blog</a>
+            <a href="certificates.html"
+                class="block w-full text-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300">
                 Certifications
             </a>
         </div>
+
     </nav>
     <!-- End of Page Navigation -->
 
+
     <!-- Page Header -->
     <header class="bg-gray-100 py-20" id="home">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-20">
-            <div class="text-center md:text-left">
-                <h6 class="text-blue-600 text-lg font-semibold">Hello, I'm</h6>
-                <h1 class="text-gray-800 text-4xl font-bold mt-2">Akash</h1>
+        <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-20">
+            <!-- Left Text Block -->
+            <div class="text-center md:text-left md:w-1/2 animate-fade-in-up">
+                <h6 class="text-blue-600 text-lg font-semibold mb-2">Hello, I'm</h6>
+                <h1 class="text-gray-800 text-4xl md:text-5xl font-bold leading-tight">Akash</h1>
                 <p class="text-gray-600 text-lg mt-4">An Aspiring Data Scientist</p>
 
-                <div class="flex justify-center md:justify-start mt-6 space-x-4">
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=akash.hiremath25@gmail.com"
-                        class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                        target="_blank"
+                        class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300 shadow-md">
                         HIRE ME
                     </a>
-                    <a href="assets/archives/Resume.pdf"
-                        class="px-6 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition">
+                    <a href="assets/archives/Resume.pdf" download
+                        class="px-6 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition duration-300 shadow-md">
                         DOWNLOAD CV
                     </a>
                 </div>
 
-                <div class="flex justify-center md:justify-start mt-6 space-x-6">
-                    <a href="https://www.linkedin.com/in/akash-hiremath25/" target="_blank">
-                        <img src="assets/imgs/linkedin.png" alt="LinkedIn" class="h-8 w-8">
+                <!-- Social Links -->
+                <div class="flex justify-center md:justify-start mt-6 space-x-5">
+                    <a href="https://www.linkedin.com/in/akash-hiremath25/" target="_blank" title="LinkedIn">
+                        <img src="assets/imgs/linkedin.png" alt="LinkedIn"
+                            class="h-8 w-8 hover:scale-110 transition duration-300">
                     </a>
-                    <a href="https://github.com/AkashHiremath856/" target="_blank">
-                        <img src="assets/imgs/github.png" alt="GitHub" class="h-8 w-8">
+                    <a href="https://github.com/AkashHiremath856/" target="_blank" title="GitHub">
+                        <img src="assets/imgs/github.png" alt="GitHub"
+                            class="h-8 w-8 hover:scale-110 transition duration-300">
                     </a>
-                    <a href="https://www.hackerrank.com/akash_hiremath25?hr_r=1" target="_blank">
-                        <img src="assets/imgs/hackerrank.png" alt="HackerRank" class="h-8 w-8">
+                    <a href="https://www.hackerrank.com/akash_hiremath25?hr_r=1" target="_blank" title="HackerRank">
+                        <img src="assets/imgs/hackerrank.png" alt="HackerRank"
+                            class="h-8 w-8 hover:scale-110 transition duration-300">
                     </a>
-                    <a href="https://medium.com/@akash.hiremath25" target="_blank">
-                        <img src="assets/imgs/medium.png" alt="Medium" class="h-8 w-8">
+                    <a href="https://medium.com/@akash.hiremath25" target="_blank" title="Medium">
+                        <img src="assets/imgs/medium.png" alt="Medium"
+                            class="h-8 w-8 hover:scale-110 transition duration-300">
                     </a>
-                    <a href="https://leetcode.com/user1604gb/" target="_blank">
-                        <img src="assets/imgs/leet.png" alt="LeetCode" class="h-8 w-8">
+                    <a href="https://leetcode.com/user1604gb/" target="_blank" title="LeetCode">
+                        <img src="assets/imgs/leet.png" alt="LeetCode"
+                            class="h-8 w-8 hover:scale-110 transition duration-300">
                     </a>
-                    <a href="https://www.kaggle.com/akashhiremath25" target="_blank">
-                        <img src="assets/imgs/kaggle.png" alt="Kaggle" class="h-8 w-8">
+                    <a href="https://www.kaggle.com/akashhiremath25" target="_blank" title="Kaggle">
+                        <img src="assets/imgs/kaggle.png" alt="Kaggle"
+                            class="h-8 w-8 hover:scale-110 transition duration-300">
                     </a>
                 </div>
             </div>
 
-            <div class="mt-10 md:mt-0">
-                <img src="assets/imgs/background.jpg" alt="Background" class="rounded-lg shadow-lg w-full md:w-[400px]">
+            <!-- Right Image -->
+            <div class="mb-10 md:mb-0 md:w-1/2 flex justify-center animate-fade-in-up delay-200">
+                <img src="assets/imgs/background.jpg" alt="Akash's Image"
+                    class="rounded-xl shadow-2xl w-full max-w-sm md:max-w-md hover:scale-105 transition-transform duration-500">
             </div>
         </div>
     </header>
+    <!-- End Page Header -->
+
 
     <!-- About section -->
     <section id="about" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-20">
+        <div class="container mx-auto px-6 md:px-20">
             <div class="flex flex-col md:flex-row items-center">
                 <!-- Profile Image -->
                 <div class="w-full md:w-1/3 flex justify-center md:justify-start">
@@ -111,29 +137,36 @@
                 <!-- About Content -->
                 <div class="w-full md:w-2/3 md:pl-8">
                     <h2 class="text-3xl font-bold text-gray-800">Akash</h2>
-                    <h4 class="text-xl text-blue-600 mt-2">Aspiring Data Scientist</h4>
+                    <h4 class="text-xl text-blue-600 mt-2">Data Engineer & Analyst | MCA Graduate</h4>
+
                     <p class="text-gray-700 mt-4 leading-relaxed">
-                        I am a highly motivated and detail-oriented data science enthusiast with a Master's degree in
-                        Computer Applications from the University of Mysore. My experience spans over 15+ academic and
-                        professional projects, where I’ve demonstrated expertise in statistical analysis, machine
-                        learning,
-                        and building impactful data-driven solutions.
+                        I’m a passionate data engineer and analyst based in Karnataka, India, with a Master’s in
+                        Computer Applications from the University of Mysore. I bring hands-on experience across data
+                        analytics, machine learning, web scraping automation, and building production-ready tools that
+                        improve efficiency and insight generation.
                     </p>
+
                     <p class="text-gray-700 mt-4 leading-relaxed">
-                        During my internship at Analyttica Datalab, I honed my skills in SQL, Python, Tableau, and
-                        machine
-                        learning algorithms such as Linear and Logistic Regression, Decision Trees, Random Forests, and
-                        Neural Networks. I successfully developed a recommendation model to categorize tickets with 40%
-                        increased efficiency and enhanced accuracy by 25%, directly impacting operational outcomes.
+                        During my internship at <strong>Analyttica Datalab</strong>, I leveraged <strong>Python, SQL,
+                            Tableau, and machine learning algorithms</strong> to improve model accuracy by 20% across
+                        multiple projects. I developed a smart ticket classification system that reduced processing time
+                        by 40%, enhanced accuracy by 25%, and automated workflows for over 500+ tickets monthly.
                     </p>
+
                     <p class="text-gray-700 mt-4 leading-relaxed">
-                        My hands-on experience includes building automated systems, conducting exploratory data analysis
-                        (EDA) on large datasets, and leveraging tools like NLTK for text preprocessing. I am passionate
-                        about staying updated on the latest advancements in data science and aspire to apply my skills
-                        to
-                        solve complex problems and drive meaningful insights.
+                        At <strong>Coders Boutique</strong>, I built tools like <em>WebScrapIn</em> — a Chrome extension
+                        to scrape LinkedIn data and automate messaging — improving outreach efficiency by 40%. I also
+                        created <em>ApplyIn</em>, an AI-based job application tool that fills out forms and improves ATS
+                        relevance, reducing manual effort by 50%.
                     </p>
-                    <a href="assets/archives/Resume.pdf"
+
+                    <p class="text-gray-700 mt-4 leading-relaxed">
+                        I enjoy building solutions that automate repetitive tasks and uncover insights from large
+                        datasets. I’m skilled in <strong>PostgreSQL, Python, Pandas, Tableau, Excel, Docker, and LLM
+                            tools</strong>, and always eager to learn and take on new challenges in the data space.
+                    </p>
+
+                    <a href="assets/archives/Resume.pdf" target="_blank"
                         class="inline-block mt-6 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
                         DOWNLOAD CV
                     </a>
@@ -141,114 +174,119 @@
             </div>
         </div>
     </section>
+    <!-- End About section -->
+
 
     <!-- Skills Section -->
     <section id="skills" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-20">
-            <div class="text-center">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Skills</h2>
-                <p class="text-gray-600 text-lg">Why Choose Me</p>
+        <div class="container mx-auto px-6 md:px-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Skills</h2>
+                <p class="text-gray-600 text-lg mt-2">Tools & Technologies I Work With</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-                <!-- Skill 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Skill Item Template -->
+                <!-- Repeat this block with different labels and % -->
                 <div class="group">
                     <h6 class="text-lg font-medium text-gray-700">Python & MySQL</h6>
-                    <div class="relative">
-                        <div class="w-full bg-gray-300 rounded-full h-3 mt-2">
-                            <div class="bg-blue-600 h-3 rounded-full group-hover:opacity-75" style="width: 89%;"></div>
+                    <div class="relative mt-2">
+                        <div class="w-full bg-gray-300 rounded-full h-3">
+                            <div class="bg-blue-600 h-3 rounded-full transition-all duration-700 ease-in-out group-hover:opacity-80"
+                                style="width: 90%;"></div>
                         </div>
                         <span
-                            class="absolute left-1/2 transform -translate-x-1/2 top-1/2 transform -translate-y-1/2 text-white font-semibold opacity-0 group-hover:opacity-100">89%</span>
+                            class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 text-white font-semibold opacity-0 group-hover:opacity-100 transition duration-300">90%</span>
                     </div>
                 </div>
 
-                <!-- Skill 2 -->
                 <div class="group">
                     <h6 class="text-lg font-medium text-gray-700">Pandas & MS Excel</h6>
-                    <div class="relative">
-                        <div class="w-full bg-gray-300 rounded-full h-3 mt-2">
-                            <div class="bg-blue-600 h-3 rounded-full group-hover:opacity-75" style="width: 83%;"></div>
+                    <div class="relative mt-2">
+                        <div class="w-full bg-gray-300 rounded-full h-3">
+                            <div class="bg-blue-600 h-3 rounded-full transition-all duration-700 ease-in-out group-hover:opacity-80"
+                                style="width: 85%;"></div>
                         </div>
                         <span
-                            class="absolute left-1/2 transform -translate-x-1/2 top-1/2 transform -translate-y-1/2 text-white font-semibold opacity-0 group-hover:opacity-100">83%</span>
+                            class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 text-white font-semibold opacity-0 group-hover:opacity-100 transition duration-300">85%</span>
                     </div>
                 </div>
 
-                <!-- Skill 3 -->
+                <div class="group">
+                    <h6 class="text-lg font-medium text-gray-700">Power BI & Tableau</h6>
+                    <div class="relative mt-2">
+                        <div class="w-full bg-gray-300 rounded-full h-3">
+                            <div class="bg-blue-600 h-3 rounded-full transition-all duration-700 ease-in-out group-hover:opacity-80"
+                                style="width: 88%;"></div>
+                        </div>
+                        <span
+                            class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 text-white font-semibold opacity-0 group-hover:opacity-100 transition duration-300">88%</span>
+                    </div>
+                </div>
+
                 <div class="group">
                     <h6 class="text-lg font-medium text-gray-700">Scikit-Learn & PyTorch</h6>
-                    <div class="relative">
-                        <div class="w-full bg-gray-300 rounded-full h-3 mt-2">
-                            <div class="bg-blue-600 h-3 rounded-full group-hover:opacity-75" style="width: 89%;"></div>
+                    <div class="relative mt-2">
+                        <div class="w-full bg-gray-300 rounded-full h-3">
+                            <div class="bg-blue-600 h-3 rounded-full transition-all duration-700 ease-in-out group-hover:opacity-80"
+                                style="width: 89%;"></div>
                         </div>
                         <span
-                            class="absolute left-1/2 transform -translate-x-1/2 top-1/2 transform -translate-y-1/2 text-white font-semibold opacity-0 group-hover:opacity-100">89%</span>
+                            class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 text-white font-semibold opacity-0 group-hover:opacity-100 transition duration-300">89%</span>
                     </div>
                 </div>
 
-                <!-- Skill 4 -->
-                <div class="group">
-                    <h6 class="text-lg font-medium text-gray-700">Git Version Control</h6>
-                    <div class="relative">
-                        <div class="w-full bg-gray-300 rounded-full h-3 mt-2">
-                            <div class="bg-blue-600 h-3 rounded-full group-hover:opacity-75" style="width: 83%;"></div>
-                        </div>
-                        <span
-                            class="absolute left-1/2 transform -translate-x-1/2 top-1/2 transform -translate-y-1/2 text-white font-semibold opacity-0 group-hover:opacity-100">83%</span>
-                    </div>
-                </div>
-
-                <!-- Skill 5 -->
-                <div class="group">
-                    <h6 class="text-lg font-medium text-gray-700">PowerBI & Tableau</h6>
-                    <div class="relative">
-                        <div class="w-full bg-gray-300 rounded-full h-3 mt-2">
-                            <div class="bg-blue-600 h-3 rounded-full group-hover:opacity-75" style="width: 89%;"></div>
-                        </div>
-                        <span
-                            class="absolute left-1/2 transform -translate-x-1/2 top-1/2 transform -translate-y-1/2 text-white font-semibold opacity-0 group-hover:opacity-100">89%</span>
-                    </div>
-                </div>
-
-                <!-- Skill 6 -->
-                <div class="group">
-                    <h6 class="text-lg font-medium text-gray-700">Beautiful Soup</h6>
-                    <div class="relative">
-                        <div class="w-full bg-gray-300 rounded-full h-3 mt-2">
-                            <div class="bg-blue-600 h-3 rounded-full group-hover:opacity-75" style="width: 83%;"></div>
-                        </div>
-                        <span
-                            class="absolute left-1/2 transform -translate-x-1/2 top-1/2 transform -translate-y-1/2 text-white font-semibold opacity-0 group-hover:opacity-100">83%</span>
-                    </div>
-                </div>
-
-                <!-- Skill 7 -->
                 <div class="group">
                     <h6 class="text-lg font-medium text-gray-700">NLTK & SpaCy</h6>
-                    <div class="relative">
-                        <div class="w-full bg-gray-300 rounded-full h-3 mt-2">
-                            <div class="bg-blue-600 h-3 rounded-full group-hover:opacity-75" style="width: 95%;"></div>
+                    <div class="relative mt-2">
+                        <div class="w-full bg-gray-300 rounded-full h-3">
+                            <div class="bg-blue-600 h-3 rounded-full transition-all duration-700 ease-in-out group-hover:opacity-80"
+                                style="width: 95%;"></div>
                         </div>
                         <span
-                            class="absolute left-1/2 transform -translate-x-1/2 top-1/2 transform -translate-y-1/2 text-white font-semibold opacity-0 group-hover:opacity-100">95%</span>
+                            class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 text-white font-semibold opacity-0 group-hover:opacity-100 transition duration-300">95%</span>
                     </div>
                 </div>
 
-                <!-- Skill 8 -->
                 <div class="group">
-                    <h6 class="text-lg font-medium text-gray-700">LLM</h6>
-                    <div class="relative">
-                        <div class="w-full bg-gray-300 rounded-full h-3 mt-2">
-                            <div class="bg-blue-600 h-3 rounded-full group-hover:opacity-75" style="width: 70%;"></div>
+                    <h6 class="text-lg font-medium text-gray-700">Beautiful Soup</h6>
+                    <div class="relative mt-2">
+                        <div class="w-full bg-gray-300 rounded-full h-3">
+                            <div class="bg-blue-600 h-3 rounded-full transition-all duration-700 ease-in-out group-hover:opacity-80"
+                                style="width: 85%;"></div>
                         </div>
                         <span
-                            class="absolute left-1/2 transform -translate-x-1/2 top-1/2 transform -translate-y-1/2 text-white font-semibold opacity-0 group-hover:opacity-100">70%</span>
+                            class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 text-white font-semibold opacity-0 group-hover:opacity-100 transition duration-300">85%</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h6 class="text-lg font-medium text-gray-700">Git & Docker</h6>
+                    <div class="relative mt-2">
+                        <div class="w-full bg-gray-300 rounded-full h-3">
+                            <div class="bg-blue-600 h-3 rounded-full transition-all duration-700 ease-in-out group-hover:opacity-80"
+                                style="width: 83%;"></div>
+                        </div>
+                        <span
+                            class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 text-white font-semibold opacity-0 group-hover:opacity-100 transition duration-300">83%</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h6 class="text-lg font-medium text-gray-700">LLM (Gemini, RAG, FAISS)</h6>
+                    <div class="relative mt-2">
+                        <div class="w-full bg-gray-300 rounded-full h-3">
+                            <div class="bg-blue-600 h-3 rounded-full transition-all duration-700 ease-in-out group-hover:opacity-80"
+                                style="width: 70%;"></div>
+                        </div>
+                        <span
+                            class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 text-white font-semibold opacity-0 group-hover:opacity-100 transition duration-300">70%</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- End Skills Section -->
 
 
     <!-- Portfolio Section -->
@@ -257,7 +295,7 @@
             <h6 class="subtitle text-5xl font-semibold text-blue-500">Portfolio</h6>
             <h6 class="section-title text-3xl font-bold text-gray-800 mb-8">Check My Wonderful Works</h6>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-20">
                 <!-- Portfolio Item 1 -->
                 <div
                     class="img-wrapper relative overflow-hidden rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
@@ -279,19 +317,15 @@
                 </div>
 
                 <!-- Portfolio Item 2 -->
-                <div
-                    class="img-wrapper relative overflow-hidden rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-                    <img src="assets/imgs/2.jpg" alt="Recommendation System for E-Commerce Platform"
-                        class="w-full h-full object-cover">
-                    <div
-                        class="overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <div
-                            class="overlay-infos text-center text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-6">
+                <div class="img-wrapper relative overflow-hidden rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+                    <img src="assets/imgs/2.jpg" alt="Recommendation System for E-Commerce Platform" class="w-full h-full object-cover">
+                    <div class="overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <div class="overlay-infos text-center text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-6">
                             <h5 class="text-lg font-semibold mb-4">Recommendation System for E-Commerce Platform</h5>
-                            <a href="assets/imgs/2.jpg" class="inline-block mb-2">
+                            <a href="assets/imgs/2.jpg" class="inline-block mb-2" target="_blank">
                                 <i class="ti-zoom-in text-2xl"></i>
                             </a>
-                            <a href="https://github.com/AkashHiremath856/Recommendation_Systems" class="inline-block">
+                            <a href="https://github.com/AkashHiremath856/Recommendation_Systems" class="inline-block" target="_blank">
                                 <i class="ti-link text-2xl" title="Source Code"></i>
                             </a>
                         </div>
@@ -445,86 +479,82 @@
     </section>
     <!-- End of Portfolio Section -->
 
+
     <!-- Blog Section -->
     <section id="blog" class="section bg-gray-100 py-16">
         <div class="container mx-auto text-center">
             <h6 class="subtitle text-5xl font-semibold text-blue-500">My Blogs</h6>
             <h6 class="section-title text-3xl font-bold text-gray-800 mb-8">Latest</h6>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-20">
                 <!-- Blog Post 1 -->
-                <div
-                    class="card border rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-                    <img src="assets/imgs/b3.jpg" alt="" class="card-img-top w-full h-64 object-cover">
+                <div class="card border rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                    <img src="assets/imgs/b3.jpg" alt="Fine-tuning with Gemma Model" class="card-img-top w-full h-64 object-cover">
                     <div class="card-body p-6 bg-white">
-                        <h5 class="card-title text-xl font-semibold text-gray-800 mb-4">A Guide to Fine-tuning with
-                            Google
-                            Gemma's Model</h5>
-                        <p class="text-gray-600 mb-4">Fine-tuning LLM model using Quantization, LoRA, QLoRA. Before
-                        delving into the complexity of fine-tuning with Google’s Gemma Model, let’s first familiarize
-                        ourselves with the concepts that simplify training, reduce memory usage, and improve model efficiency.
+                        <h5 class="card-title text-xl font-semibold text-gray-800 mb-4">
+                            A Guide to Fine-tuning with Google Gemma's Model
+                        </h5>
+                        <p class="text-gray-600 mb-4">
+                            Fine-tuning LLM model using Quantization, LoRA, QLoRA. This post explains how these concepts help reduce memory usage, simplify training, and improve model performance.
                         </p>
-                        <a href="https://medium.com/@akash.hiremath25/mastering-precision-a-guide-to-fine-tuning-with-google-gemmas-model-8b27f9c0cddb"
-                            class="text-blue-500 font-semibold hover:underline">Read More..</a>
+                        <a href="https://medium.com/@akash.hiremath25/mastering-precision-a-guide-to-fine-tuning-with-google-gemmas-model-8b27f9c0cddb" class="text-blue-500 font-semibold hover:underline">Read More..</a>
                     </div>
                 </div>
 
                 <!-- Blog Post 2 -->
-                <div
-                    class="card border rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-                    <img src="assets/imgs/b1.jpg" alt="" class="card-img-top w-full h-64 object-cover">
+                <div class="card border rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                    <img src="assets/imgs/b1.jpg" alt="Gemini FAISS PDF App" class="card-img-top w-full h-64 object-cover">
                     <div class="card-body p-6 bg-white">
-                        <h5 class="card-title text-xl font-semibold text-gray-800 mb-4">Unlocking the Power of
-                            Intelligence:
-                            Building an Application with Gemini, Python, and FAISS for PDF-Driven Multi-Input Processing
+                        <h5 class="card-title text-xl font-semibold text-gray-800 mb-4">
+                            Building an Application with Gemini, Python, and FAISS
                         </h5>
-                        <p class="text-gray-600 mb-4">In this blog, I delve into the world of advanced AI and how to
-                            integrate multiple technologies to build powerful, PDF-driven applications. This includes exploring tools
-                            like NLP, machine learning,</p>
-                        <a href="https://medium.com/@akash.hiremath25/unlocking-the-power-of-intelligence-building-an-application-with-gemini-python-and-faiss-for-eb9a055d2429"
-                            class="text-blue-500 font-semibold hover:underline">Read More..</a>
+                        <p class="text-gray-600 mb-4">
+                            Explore how to create powerful AI apps that process PDF documents using LLMs, FAISS indexing, and Python — perfect for multi-input NLP workflows.
+                        </p>
+                        <a href="https://medium.com/@akash.hiremath25/unlocking-the-power-of-intelligence-building-an-application-with-gemini-python-and-faiss-for-eb9a055d2429" class="text-blue-500 font-semibold hover:underline">Read More..</a>
                     </div>
                 </div>
 
                 <!-- Blog Post 3 -->
-                <div
-                    class="card border rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-                    <img src="assets/imgs/b2.webp" alt="" class="card-img-top w-full h-64 object-cover">
+                <div class="card border rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                    <img src="assets/imgs/b2.webp" alt="Outlier Detection" class="card-img-top w-full h-64 object-cover">
                     <div class="card-body p-6 bg-white">
-                        <h5 class="card-title text-xl font-semibold text-gray-800 mb-4">Unearthing Outliers: Methods for
-                            Detection and Handling</h5>
-                        <p class="text-gray-600 mb-4">Outliers in data science refer to data points that deviate
-                            significantly from the majority of the observations in a dataset. Outliers can arise due to variability in 
-                            the data, measurement errors, or experimental anomalies, and their proper treatment is crucial for 
-                            building accurate and reliable models..</p>
-                        <a href="https://medium.com/@akash.hiremath25/unearthing-outliers-methods-for-detection-and-handling-a0edf050aff6"
-                            class="text-blue-500 font-semibold hover:underline">Read More..</a>
+                        <h5 class="card-title text-xl font-semibold text-gray-800 mb-4">
+                            Unearthing Outliers: Methods for Detection and Handling
+                        </h5>
+                        <p class="text-gray-600 mb-4">
+                            Discover techniques for identifying and treating outliers in your data to ensure more accurate and reliable machine learning models.
+                        </p>
+                        <a href="https://medium.com/@akash.hiremath25/unearthing-outliers-methods-for-detection-and-handling-a0edf050aff6" class="text-blue-500 font-semibold hover:underline">Read More..</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    </body>
     <!-- End of Blog Section -->
 
+
     <!-- Hire Me Section -->
-    <section class="p-5 text-white">
-        <div class="container mx-auto">
-            <div class="bg-blue-600 border-0 shadow-lg w-full">
-                <div class="p-5">
-                    <div class="flex items-center justify-between">
-                        <div class="flex-1 text-center sm:text-left">
-                            <h5 class="mt-3 mb-0 font-semibold text-lg">Looking for a Data Geek? Hire Me!</h5>
-                            <p class="mb-0">I bring a passion for data analysis, machine learning, and predictive
-                                modeling.
-                            </p>
-                        </div>
-                        <div class="text-center">
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=akash.hiremath25@gmail.com"
-                                class="inline-block bg-white text-blue-600 px-6 py-2 rounded-full text-lg mt-3">
-                                <i class="fas fa-envelope"></i> Contact Me
-                            </a>
-                        </div>
-                    </div>
+    <section class="py-12 bg-blue-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <!-- Text Section -->
+                <div class="text-center md:text-left flex-1">
+                    <h3 class="text-2xl font-semibold mb-2">Looking for a Data Geek? Hire Me!</h3>
+                    <p class="text-lg opacity-90">I bring a passion for data analysis, machine learning, and predictive modeling to deliver impactful results.</p>
+                </div>
+
+                <!-- Button -->
+                <div>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=akash.hiremath25@gmail.com"
+                    class="inline-flex items-center gap-2 px-6 py-3 bg-white text-blue-600 font-semibold rounded-full shadow-lg hover:bg-gray-100 transition-all duration-300 ease-in-out">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 12H8m8 0l-4-4m4 4l-4 4m12-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Contact Me
+                    </a>
                 </div>
             </div>
         </div>
@@ -533,43 +563,102 @@
 
 
     <!-- Page Footer -->
-    <footer class="page-footer bg-gray-900 text-white py-8">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-sm-6 text-center text-sm-left">
-                    <p>&copy;
-                        <script>document.write(new Date().getFullYear())</script> <a href="#"
-                            class="text-white hover:text-blue-400">Akash</a>. All Rights Reserved.
-                    </p>
-                </div>
-                <div class="col-sm-6 text-center text-sm-right">
-                    <a href="https://github.com/AkashHiremath856" target="_blank"
-                        class="text-white mx-3 hover:text-blue-400" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/akash-hiremath" target="_blank"
-                        class="text-white mx-3 hover:text-blue-400" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:akash.hiremath25@example.com" class="text-white mx-3 hover:text-blue-400"
-                        title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+            <!-- Left -->
+            <p class="text-sm text-center md:text-left mb-4 md:mb-0">
+                &copy; <script>document.write(new Date().getFullYear())</script>
+                <a href="#" class="text-blue-400 hover:underline font-medium">Akash</a>. All rights reserved.
+            </p>
+
+            <!-- Right: Social Icons -->
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/AkashHiremath856" target="_blank" class="hover:text-blue-400 transition" title="GitHub">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/akash-hiremath" target="_blank" class="hover:text-blue-400 transition" title="LinkedIn">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="mailto:akash.hiremath25@gmail.com" class="hover:text-blue-400 transition" title="Email">
+                    <i class="fas fa-envelope fa-lg"></i>
+                </a>
             </div>
         </div>
     </footer>
     <!-- End of Page Footer -->
-</body>
+
+<!-- Style -->
+<style>
+    .nav-link {
+        position: relative;
+        color: #1f2937;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: #2563eb;
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover {
+        color: #2563eb;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    .mobile-link {
+        padding: 0.5rem 0;
+        color: #1f2937;
+        font-weight: 500;
+        border-bottom: 1px solid #e5e7eb;
+        transition: color 0.3s ease;
+    }
+
+    .mobile-link:hover {
+        color: #2563eb;
+    }
+
+    @keyframes fade-in-up {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade-in-up {
+        animation: fade-in-up 0.8s ease-out both;
+    }
+
+    .delay-200 {
+        animation-delay: 0.2s;
+    }
+</style>
+<!-- End Style -->
 
 
 <!-- Script for Mobile Menu -->
 <script>
-    const toggler = document.getElementById('navbar-toggler');
-    const menu = document.getElementById('mobile-menu');
-    toggler.addEventListener('click', () => {
-        menu.style.display = menu.style.display === 'none' || !menu.style.display ? 'block' : 'none';
+    const toggler = document.getElementById("navbar-toggler");
+    const menu = document.getElementById("mobile-menu");
+
+    toggler.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
     });
+
 </script>
 
 </html>
