@@ -7,228 +7,452 @@
    <meta name="description" content="Start your development with Steller landing page.">
    <meta name="author" content="Devcrud">
    <title>My Portfolio | Certifications</title>
-   <!-- Font icons -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    <!-- Tailwind CSS CDN -->
    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-sans bg-gray-100">
 
-   <!-- Page Header -->
-   <header class="bg-gray-800 text-white py-6">
-      <div class="container mx-auto text-center">
-         <h1 class="text-3xl font-bold">Certifications</h1>
-         <nav class="mt-2">
-            <a href="index.html" class="text-blue-400 hover:text-blue-600">Home</a> /
-            <span class="text-gray-300">Certifications</span>
-         </nav>
+<!-- Modern Animated Navbar -->
+<nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+   <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#home" class="flex items-center space-x-2">
+         <img src="assets/imgs/logo.svg" alt="Logo" class="h-8 w-auto">
+         <span class="text-xl font-bold text-gray-800">Akash</span>
+      </a>
+
+      <!-- Hamburger Menu -->
+      <button id="navbar-toggler"
+         class="lg:hidden flex flex-col justify-center items-center space-y-1 focus:outline-none">
+         <span class="block w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+         <span class="block w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+         <span class="block w-6 h-0.5 bg-gray-800 transition-all duration-300"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div id="navbar-menu" class="hidden lg:flex items-center space-x-8">
+         <a href="index.html"
+            class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300">Home</a>
+         <a href="#internships" class="nav-link">Internships</a>
+         <a href="#certs-2024" class="nav-link">2024</a>
+         <a href="#certs-2023" class="nav-link">2023</a>
+         <a href="#certs-2022" class="nav-link">2022</a>
       </div>
-   </header>
-   <!-- End Of Page Header -->
+   </div>
 
-   <!-- Certifications -->
-   <section id="certifications" class="py-12">
-      <div class="container mx-auto px-4">
+   <!-- Mobile Menu -->
+   <div id="mobile-menu" class="lg:hidden hidden flex flex-col bg-white px-4 pb-4 space-y-2">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="#internships" class="mobile-link">Internships</a>
+      <a href="#certs-2024" class="mobile-link">2024</a>
+      <a href="#certs-2023" class="mobile-link">2023</a>
+      <a href="#certs-2022" class="mobile-link">2022</a>
+   </div>
+</nav>
 
-         <!-- Section Title -->
-         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold">My Certifications</h2>
-         </div>
 
-         <!-- Internship Certificates -->
-         <div class="mb-12">
-            <h3 class="text-3xl font-semibold mb-6">Internship Certificates</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Certifications Section -->
+<section id="certifications" class="pt-32 py-16 bg-gray-100">
+   <div class="container mx-auto px-4">
+
+      <!-- Section Title -->
+      <div class="text-center mb-16 animate-fade-in-up">
+         <h2 class="text-4xl font-extrabold text-gray-800 tracking-tight">🎓 My Certifications</h2>
+         <p class="text-gray-500 mt-2">A showcase of my professional and internship achievements.</p>
+      </div>
+
+      <!-- Internship Certificates Section -->
+      <section id="internships" class="scroll-mt-24">
+         <div class="mb-12" id="internships">
+            <h3 class="text-2xl font-semibold text-gray-700 mb-8 animate-fade-in-up">💼 Internship Certificates</h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
                <!-- Certificate 1 -->
                <div
-                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <a href="assets/archives/IC2.png" class="block">
-                     <img src="assets/archives/IC2.png" alt="Internship Certificate from Analyttica"
-                        class="w-full h-48 object-cover">
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-500 ease-in-out animate-fade-in-up">
+                  <a href="assets/archives/IC2.png" target="_blank">
+                     <img src="assets/archives/IC2.png" alt="Internship Certificate from Coders Boutique"
+                        class="w-full h-52 object-cover object-center">
                   </a>
                   <div class="p-4">
-                     <h4 class="text-xl font-medium">Internship Certificates from Coders Boutique (Data Engineer)</h4>
+                     <h4 class="text-lg font-semibold text-gray-800">Coders Boutique - Data Engineer Intern</h4>
+                     <p class="text-sm text-gray-500 mt-1">Oct - Dec 2024</p>
                   </div>
                </div>
 
                <!-- Certificate 2 -->
                <div
-                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <a href="assets/archives/IC.png" class="block">
-                     <img src="assets/archives/IC.png" alt="Power BI Job from PwC" class="w-full h-48 object-cover">
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-500 ease-in-out animate-fade-in-up">
+                  <a href="assets/archives/IC.png" target="_blank">
+                     <img src="assets/archives/IC.png" alt="Internship Certificate from Analyttica"
+                        class="w-full h-52 object-cover object-center">
                   </a>
                   <div class="p-4">
-                     <h4 class="text-xl font-medium">Internship Certificates from Analyttica (Data Analyst)</h4>
+                     <h4 class="text-lg font-semibold text-gray-800">Analyttica Datalab - Data Analyst Intern</h4>
+                     <p class="text-sm text-gray-500 mt-1">Mar - Jun 2024</p>
                   </div>
                </div>
-
-                <!-- Certificate 3 -->
-                <div
-                class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <a href="assets/archives/leetcode.png" class="block">
-                   <img src="assets/archives/leetcode.png" alt="Data Analysis with Python"
-                      class="w-full h-48 object-cover">
-                </a>
-                <div class="p-4">
-                   <h4 class="text-xl font-medium">"50 Days Badge 2024" on LeetCode</h4>
-                </div>
-             </div>
 
             </div>
          </div>
+      </section>
+      <!-- Internship Certificates Section End -->
 
-         <!-- 2024 Certificates -->
-         <div class="mb-12">
-            <h3 class="text-3xl font-semibold mb-6">2024</h3>
+
+      <!-- Certificate 3 (Single Row Left-Aligned with Empty Slots) -->
+      <div class="mb-12">
+         <h3 class="text-2xl font-semibold text-gray-700 mb-8 animate-fade-in-up">🏅 Achievement Badge</h3>
+
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Certificate Card -->
+            <div
+               class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-500 ease-in-out animate-fade-in-up">
+               <a href="assets/archives/leetcode.png" target="_blank" class="block">
+                  <img src="assets/archives/leetcode.png" alt="50 Days Badge from LeetCode"
+                     class="w-full h-52 object-cover object-center">
+               </a>
+               <div class="p-4">
+                  <h4 class="text-lg font-semibold text-gray-800">LeetCode - 50 Days Badge</h4>
+                  <p class="text-sm text-gray-500 mt-1">Earned in 2024</p>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+
+      <!-- 2024 Certificates Section -->
+      <section id="certs-2024" class="scroll-mt-24">
+         <div class="mb-12" id="certs-2024">
+            <h3 class="text-3xl font-semibold text-gray-800 mb-6 animate-fade-in-up">📅 Certifications Earned in 2024
+            </h3>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                <!-- Certificate 1 -->
                <div
-                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <a href="assets/archives/ds9.pdf" class="block">
-                     <img src="assets/archives/ds9.jpg" alt="IBM Data Science Professional Certificate"
-                        class="w-full h-48 object-cover">
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-500 animate-fade-in-up">
+                  <a href="assets/archives/ds9.pdf" target="_blank" class="block">
+                     <img src="assets/archives/ds9.jpg" alt="IBM ML with Python Certificate"
+                        class="w-full h-48 object-cover object-center">
                   </a>
                   <div class="p-4">
-                     <h4 class="text-xl font-medium">IBM Data Science Professional Certificate (Machine Learning with
-                        Python)</h4>
+                     <h4 class="text-lg font-semibold text-gray-800">
+                        IBM - Machine Learning with Python
+                     </h4>
+                     <p class="text-sm text-gray-500">Data Science Professional Certificate</p>
                   </div>
                </div>
 
                <!-- Certificate 2 -->
                <div
-                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <a href="assets/archives/ds8.pdf" class="block">
-                     <img src="assets/archives/ds8.jpg" alt="Data Visualization with Python"
-                        class="w-full h-48 object-cover">
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-500 animate-fade-in-up">
+                  <a href="assets/archives/ds8.pdf" target="_blank" class="block">
+                     <img src="assets/archives/ds8.jpg" alt="IBM Data Viz Certificate"
+                        class="w-full h-48 object-cover object-center">
                   </a>
                   <div class="p-4">
-                     <h4 class="text-xl font-medium">IBM Data Science Professional Certificate (Data Visualization with
-                        Python)</h4>
+                     <h4 class="text-lg font-semibold text-gray-800">
+                        IBM - Data Visualization with Python
+                     </h4>
+                     <p class="text-sm text-gray-500">Data Science Professional Certificate</p>
                   </div>
                </div>
 
                <!-- Certificate 3 -->
                <div
-                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <a href="assets/archives/ds7.pdf" class="block">
-                     <img src="assets/archives/ds7.jpg" alt="Data Analysis with Python"
-                        class="w-full h-48 object-cover">
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-500 animate-fade-in-up">
+                  <a href="assets/archives/ds7.pdf" target="_blank" class="block">
+                     <img src="assets/archives/ds7.jpg" alt="IBM Data Analysis Certificate"
+                        class="w-full h-48 object-cover object-center">
                   </a>
                   <div class="p-4">
-                     <h4 class="text-xl font-medium">IBM Data Science Professional Certificate (Data Analysis with
-                        Python)</h4>
+                     <h4 class="text-lg font-semibold text-gray-800">
+                        IBM - Data Analysis with Python
+                     </h4>
+                     <p class="text-sm text-gray-500">Data Science Professional Certificate</p>
                   </div>
                </div>
-
             </div>
          </div>
+      </section>
 
-         <!-- 2023 Certificates -->
-         <div class="mb-12">
-            <h3 class="text-3xl font-semibold mb-6">2023</h3>
+
+      <!-- 2023 Certificates Section -->
+      <section id="certs-2023" class="scroll-mt-24">
+         <div class="mb-12" id="certs-2023">
+            <h3 class="text-3xl font-semibold text-gray-800 mb-6 animate-fade-in-up">📅 Certifications Earned in 2023
+            </h3>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                <!-- Certificate 1 -->
                <div
-                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <a href="assets/archives/11.pdf" class="block">
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-500 animate-fade-in-up">
+                  <a href="assets/archives/11.pdf" target="_blank" class="block">
                      <img src="assets/archives/11.jpg" alt="Data Science Course Certificate"
-                        class="w-full h-48 object-cover">
+                        class="w-full h-48 object-cover object-center">
                   </a>
                   <div class="p-4">
-                     <h4 class="text-xl font-medium">Data Science Course Certificate from Intershala</h4>
+                     <h4 class="text-lg font-semibold text-gray-800">Data Science Course Certificate</h4>
+                     <p class="text-sm text-gray-500">Issued by Internshala</p>
                   </div>
                </div>
 
                <!-- Certificate 2 -->
                <div
-                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <a href="assets/archives/2.pdf" class="block">
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-500 animate-fade-in-up">
+                  <a href="assets/archives/2.pdf" target="_blank" class="block">
                      <img src="assets/archives/2.jpg" alt="MySQL Assessment Certificate"
-                        class="w-full h-48 object-cover">
+                        class="w-full h-48 object-cover object-center">
                   </a>
                   <div class="p-4">
-                     <h4 class="text-xl font-medium">MySQL Assessment Certificate from HackerRank</h4>
+                     <h4 class="text-lg font-semibold text-gray-800">MySQL Assessment Certificate</h4>
+                     <p class="text-sm text-gray-500">Issued by HackerRank</p>
                   </div>
                </div>
 
                <!-- Certificate 3 -->
                <div
-                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <a href="assets/archives/3.pdf" class="block">
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-500 animate-fade-in-up">
+                  <a href="assets/archives/3.pdf" target="_blank" class="block">
                      <img src="assets/archives/3.jpg" alt="Problem Solving Certificate"
-                        class="w-full h-48 object-cover">
+                        class="w-full h-48 object-cover object-center">
                   </a>
                   <div class="p-4">
-                     <h4 class="text-xl font-medium">Problem Solving Assessment Certificate from HackerRank</h4>
+                     <h4 class="text-lg font-semibold text-gray-800">Problem Solving Assessment Certificate</h4>
+                     <p class="text-sm text-gray-500">Issued by HackerRank</p>
                   </div>
                </div>
 
             </div>
          </div>
+      </section>
 
-         <!-- 2022 Certificates -->
-         <div class="mb-12">
-            <h3 class="text-3xl font-semibold mb-6">2022</h3>
+
+      <!-- 2022 Certificates Section -->
+      <section id="certs-2022" class="scroll-mt-24">
+         <div class="mb-12" id="certs-2022">
+            <h3 class="text-3xl font-semibold text-gray-800 mb-6 animate-fade-in-up">📅 Certifications Earned in 2022
+            </h3>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                <!-- Certificate 1 -->
                <div
-                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <a href="assets/archives/9.png" class="block">
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-500 animate-fade-in-up">
+                  <a href="assets/archives/9.png" target="_blank" class="block">
                      <img src="assets/archives/9.png" alt="ML Intermediate Certificate from Kaggle"
-                        class="w-full h-48 object-cover">
+                        class="w-full h-48 object-cover object-center">
                   </a>
                   <div class="p-4">
-                     <h4 class="text-xl font-medium">ML Intermediate Course Completion Certificate from Kaggle</h4>
+                     <h4 class="text-lg font-semibold text-gray-800">ML Intermediate Course Certificate</h4>
+                     <p class="text-sm text-gray-500">Issued by Kaggle</p>
                   </div>
                </div>
 
                <!-- Certificate 2 -->
                <div
-                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <a href="assets/archives/8.png" class="block">
-                     <img src="assets/archives/8.png" alt="ML Basic Course Certificate"
-                        class="w-full h-48 object-cover">
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-500 animate-fade-in-up">
+                  <a href="assets/archives/8.png" target="_blank" class="block">
+                     <img src="assets/archives/8.png" alt="ML Basic Certificate from Kaggle"
+                        class="w-full h-48 object-cover object-center">
                   </a>
                   <div class="p-4">
-                     <h4 class="text-xl font-medium">ML Basic Course Completion Certificate from Kaggle</h4>
+                     <h4 class="text-lg font-semibold text-gray-800">ML Basic Course Certificate</h4>
+                     <p class="text-sm text-gray-500">Issued by Kaggle</p>
                   </div>
                </div>
 
                <!-- Certificate 3 -->
                <div
-                  class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <a href="assets/archives/7.png" class="block">
-                     <img src="assets/archives/7.png" alt="Data Visualization Certificate"
-                        class="w-full h-48 object-cover">
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-500 animate-fade-in-up">
+                  <a href="assets/archives/7.png" target="_blank" class="block">
+                     <img src="assets/archives/7.png" alt="Data Visualization Certificate from Kaggle"
+                        class="w-full h-48 object-cover object-center">
                   </a>
                   <div class="p-4">
-                     <h4 class="text-xl font-medium">Data Visualization Course Completion Certificate from Kaggle</h4>
+                     <h4 class="text-lg font-semibold text-gray-800">Data Visualization Course Certificate</h4>
+                     <p class="text-sm text-gray-500">Issued by Kaggle</p>
                   </div>
                </div>
 
             </div>
          </div>
+      </section>
 
+   </div>
+</section>
+<!-- End Certifications Section -->
+
+
+
+<!-- Page Footer -->
+<footer class="bg-gray-900 text-white py-8">
+   <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+      <!-- Left -->
+      <p class="text-sm text-center md:text-left mb-4 md:mb-0">
+         &copy;
+         <script>document.write(new Date().getFullYear())</script>
+         <a href="#" class="text-blue-400 hover:underline font-medium">Akash</a>. All rights reserved.
+      </p>
+
+      <!-- Right: Social Icons -->
+      <div class="flex justify-center space-x-6">
+         <a href="https://github.com/AkashHiremath856" target="_blank" class="hover:text-blue-400 transition"
+            title="GitHub">
+            <i class="fab fa-github fa-lg"></i>
+         </a>
+         <a href="https://www.linkedin.com/in/akash-hiremath" target="_blank" class="hover:text-blue-400 transition"
+            title="LinkedIn">
+            <i class="fab fa-linkedin fa-lg"></i>
+         </a>
+         <a href="mailto:akash.hiremath25@gmail.com" class="hover:text-blue-400 transition" title="Email">
+            <i class="fas fa-envelope fa-lg"></i>
+         </a>
       </div>
-   </section>
-   <!-- End Certifications Section -->
+   </div>
+</footer>
+<!-- End of Page Footer -->
 
-   <!-- Page Footer -->
-   <footer class="bg-gray-800 text-white py-6">
-      <div class="container mx-auto text-center">
-         <p>&copy; <span id="year"></span> Akash. All Rights Reserved.</p>
-      </div>
-   </footer>
 
-   <!-- Script to update the year -->
-   <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-   </script>
+
+<script>
+   const toggler = document.getElementById("cert-navbar-toggler");
+   const desktopMenu = document.getElementById("cert-navbar-menu");
+   const mobileMenu = document.getElementById("cert-mobile-menu");
+
+   toggler.addEventListener("click", () => {
+      desktopMenu.classList.toggle("hidden");
+      mobileMenu.classList.toggle("hidden");
+   });
+
+   // Active nav highlight on scroll
+   const sections = document.querySelectorAll("section[id]");
+   const navLinks = document.querySelectorAll(".nav-btn");
+
+   window.addEventListener("scroll", () => {
+      let scrollPos = window.scrollY + 100;
+
+      sections.forEach((section) => {
+         const top = section.offsetTop;
+         const height = section.offsetHeight;
+         const id = section.getAttribute("id");
+
+         if (scrollPos >= top && scrollPos <= top + height) {
+            navLinks.forEach((link) => {
+               link.classList.remove("text-blue-600", "font-semibold");
+               if (link.getAttribute("href") === `#${id}`) {
+                  link.classList.add("text-blue-600", "font-semibold");
+               }
+            });
+         }
+      });
+   });
+</script>
+
+
+
+<!-- Tailwind Custom Animations -->
+<style>
+   html {
+      scroll-behavior: smooth;
+   }
+
+   @keyframes fade-in-up {
+      0% {
+         opacity: 0;
+         transform: translateY(20px);
+      }
+
+      100% {
+         opacity: 1;
+         transform: translateY(0);
+      }
+   }
+
+   .animate-fade-in-up {
+      animation: fade-in-up 1s ease-out both;
+   }
+
+   @keyframes fade-in-up {
+      0% {
+         opacity: 0;
+         transform: translateY(20px);
+      }
+
+      100% {
+         opacity: 1;
+         transform: translateY(0);
+      }
+   }
+
+   .animate-fade-in-up {
+      animation: fade-in-up 1s ease-out both;
+   }
+
+
+   .nav-link {
+      position: relative;
+      color: #1f2937;
+      font-weight: 500;
+      transition: color 0.3s ease;
+   }
+
+   .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #2563eb;
+      transition: width 0.3s ease;
+   }
+
+   .nav-link:hover {
+      color: #2563eb;
+   }
+
+   .nav-link:hover::after {
+      width: 100%;
+   }
+
+   .mobile-link {
+      padding: 0.5rem 0;
+      color: #1f2937;
+      font-weight: 500;
+      border-bottom: 1px solid #e5e7eb;
+      transition: color 0.3s ease;
+   }
+
+   .mobile-link:hover {
+      color: #2563eb;
+   }
+
+   @keyframes fade-in-up {
+      0% {
+         opacity: 0;
+         transform: translateY(30px);
+      }
+
+      100% {
+         opacity: 1;
+         transform: translateY(0);
+      }
+   }
+
+   .animate-fade-in-up {
+      animation: fade-in-up 0.8s ease-out both;
+   }
+
+   .delay-200 {
+      animation-delay: 0.2s;
+   }
+</style>
+<!-- End Style -->
+
 
 </body>
 
